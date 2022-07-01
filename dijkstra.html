@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>システム開発A・サンプル05</title>
+        <script src="./Dijkstra.js"></script>
+    </head>
+    <body>
+        <h1>ダイクストラ法</h1>
+
+        <p>全10地点の中で任意に選ばれた2点間の最短経路を求めます。</p>
+        <a>※ 経路選択では「始点 ＜ 終点」になるように選択してください</a>
+        <p>経路図は以下の画像のようになっています</p>
+        <img src="./Sample05.jpg">
+        <div>
+            <label>
+                <select id="Titen1">
+                    <option value="1">1から</option>
+                    <option value="2">2から</option>
+                    <option value="3">3から</option>
+                    <option value="4">4から</option>
+                    <option value="5">5から</option>
+                    <option value="6">6から</option>
+                    <option value="7">7から</option>
+                    <option value="8">8から</option>
+                    <option value="9">9から</option>
+                    <option value="10">10から</option>
+                </select>
+                <select id="Titen2">
+                    <option value="1">1までの</option>
+                    <option value="2">2までの</option>
+                    <option value="3">3までの</option>
+                    <option value="4">4までの</option>
+                    <option value="5">5までの</option>
+                    <option value="6">6までの</option>
+                    <option value="7">7までの</option>
+                    <option value="8">8までの</option>
+                    <option value="9">9までの</option>
+                    <option value="10">10までの</option>
+                </select>
+                <button type="button" name="SK" onclick="Saitan()">最短経路を求める</button>
+            </label>
+        </div>
+        <p id="kekka">求解中・・・</p>
+    </body>
+    <style>
+        img{width: 500px;height: 300px;}
+    </style>
+</html>
